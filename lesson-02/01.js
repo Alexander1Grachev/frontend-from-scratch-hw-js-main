@@ -13,6 +13,18 @@ const isVerifiedUser = true
 const hasSpecialPermission = true
 const hasTemporaryPass = false
 
-let isAccess
+let isAccess = false;
 
 // your code
+
+switch (!isAccess) {
+
+    case (isAdmin || hasTemporaryPass): 
+        isAccess = false
+        break
+    case (isVerifiedUser || hasSpecialPermission): 
+        isAccess = true
+        break
+}
+const message = isAccess ? 'доступ открыт' : 'в доступе отказанно'
+alert(isAccess);
