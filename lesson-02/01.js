@@ -19,12 +19,7 @@ let isAccess = false;
 
 switch (!isAccess) {
 
-    case (isAdmin || hasTemporaryPass): 
-        isAccess = false
-        break
-    case (isVerifiedUser || hasSpecialPermission): 
+    case ((isVerifiedUser || isAdmin) && (hasSpecialPermission || hasTemporaryPass)):
         isAccess = true
         break
 }
-const message = isAccess ? 'доступ открыт' : 'в доступе отказанно'
-alert(isAccess);
