@@ -12,4 +12,25 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-function doubleEachCharacter() {}
+
+
+
+function doubleEachCharacter(word) { // создаем функцию слова ворд
+
+    let doublesCharacter = ""; // создаем новый строчный объект куда будем складывать слова
+
+    for (let i = 0; i < word.length; i++) {// считаем символы '0' считает ниже, переключается далее '1' считает ниже, переключается далее '2'
+        doublesCharacter += word[i] + word[i]; // s[0] + s[0] новая итерация for s[1] + s[1] новая итерация for s[2] + s[2]
+    }
+    return doublesCharacter;
+
+}
+
+console.log(doubleEachCharacter(`str`));
+
+
+
+
+
+
+
