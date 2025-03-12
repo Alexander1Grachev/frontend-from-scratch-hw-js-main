@@ -21,7 +21,6 @@ const game = {
     } else {
       return 'Invalid resource'
     }
-    console.log(this.resources)
   }
 }
-game.addResource('gold', 100)
+console.log(game.addResource('apple', 100))
