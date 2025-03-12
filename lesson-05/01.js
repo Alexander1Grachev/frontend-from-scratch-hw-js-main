@@ -24,5 +24,4 @@ const game = {
     console.log(this.resources)
   }
 }
-
 game.addResource('gold', 100)
