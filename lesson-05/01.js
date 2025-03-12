@@ -17,12 +17,12 @@ const game = {
   },
   addResource(resourceType, amount) {
     if (resourceType in game.resources) {
-      return game.resources[resourceType] += amount;
+      console.log(game.resources[resourceType] += amount)
     } else {
       console.log('Invalid resource')
-      return null
+      
     }
   }
 }
-console.log(game.addResource('lumber', 100))
-console.log(game.addResource('apples', 100))
+game.addResource('lumber', 100)
+game.addResource('apple', 100)
