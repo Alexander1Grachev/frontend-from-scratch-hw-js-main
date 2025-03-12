@@ -37,11 +37,11 @@ const gallery = {
 
 function updateGallery(galleryObj, workName, updetedName) {
   if (workName in galleryObj) {
-    gallery[workName] = updetedName;
+    galleryObj[workName] = updetedName;
   } else {
-  gallery[workName] = updetedName;
-  
-}
+    galleryObj[workName] = updetedName;
+
+  }
 }
 
 updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
