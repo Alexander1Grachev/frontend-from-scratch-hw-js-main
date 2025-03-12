@@ -17,10 +17,11 @@
 
 function doubleEachCharacter(word) { // создаем функцию слова ворд
 
-    let doublesCharacter = ""; // создаем новый строчный объект куда будем складывать слова
+    let doublesCharacter = ""; // создаем новый строчный объект( пустую строку) куда будем складывать слова
 
-    for (let i = 0; i < word.length; i++) {// считаем символы '0' считает ниже, переключается далее '1' считает ниже, переключается далее '2'
-        doublesCharacter += word[i] + word[i]; // s[0] + s[0] новая итерация for s[1] + s[1] новая итерация for s[2] + s[2]
+    for (let i = 0; i < word.length; i++) {// перебераем символы и складываем их '0' = s[0] + s[0], переключается далее '1'= s[1] + s[1], 
+                                            // переключается далее '2'= s[2] + s[2]
+        doublesCharacter += word[i] + word[i]; 
     }
     return doublesCharacter;
 
