@@ -39,11 +39,13 @@ function updateGallery(galleryObj, workName, updetedName) {
   if (workName in galleryObj) {
     gallery[workName] = updetedName;
   } else {
-    gallery[workName] = updetedName;
-  }
-  console.log(galleryObj)
+  gallery[workName] = updetedName;
+  
+}
 }
 
 updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
-
 updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
+
+console.log(gallery)
+
