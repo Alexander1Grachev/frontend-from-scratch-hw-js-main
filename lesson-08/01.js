@@ -74,9 +74,6 @@ petCart.addEventListener('click', function (event) {
   const targetElement = event.target
 
   if (targetElement.classList.contains('pet')) {
-    targetElement.classList.toggle('done')
-
-
     const id = targetElement.id
 
     if (!cart.includes(id) && cart.length < 3) {
